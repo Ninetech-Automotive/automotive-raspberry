@@ -1,5 +1,11 @@
 # automotive-raspberry
 
+## Installation
+
+```
+pip install -r src/Core/requirements.txt
+```
+
 ## How to work with the automotive-core git submodule
 
 Note: You can add, commit and push changes like normal when changing directory to the submodule at `controllers/RaspberryController/Core`.

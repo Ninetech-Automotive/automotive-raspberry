@@ -4,6 +4,8 @@ from Communication.Emitter import Emitter
 from Communication.Receiver import Receiver
 from ObjectDetection.ObjectDetector import ObjectDetector
 from ObjectDetection.YOLODetector import YOLODetector
+from ObjectDetection.Camera import Camera
+from RaspberryCamera import RaspberryCamera
 from Navigation.NavigationController import NavigationController
 from RaspberryEmitter import RaspberryEmitter
 from RaspberryReceiver import RaspberryReceiver
@@ -13,7 +15,8 @@ from pathlib import Path
 
 def main():
     Configurator.initialize(Path("src/config.json"))
-    object_detector: ObjectDetector = YOLODetector()
+    camera: Camera = RaspberryCamera()
+    object_detector: ObjectDetector = YOLODetector(camera)
     emitter: Emitter = RaspberryEmitter()
     navigation_controller = NavigationController(emitter, object_detector)
     receiver: Receiver = RaspberryReceiver(navigation_controller)

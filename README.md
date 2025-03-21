@@ -3,7 +3,9 @@
 ## Installation
 
 ```
-pip install -r src/Core/requirements.txt
+python -m venv --system-site-packages .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## How to work with the automotive-core git submodule

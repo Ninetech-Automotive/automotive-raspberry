@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## How to work with the automotive-core git submodule
 
-Note: You can add, commit and push changes like normal when changing directory to the submodule at `controllers/RaspberryController/Core`.
+Note: You can add, commit and push changes like normal when changing directory to the submodule at `src/Core`.
 
 Clone the project
 

@@ -1,9 +1,12 @@
 from Communication.Receiver import Receiver
 from Navigation.NavigationController import NavigationController
+from CommunciationInterface import CommunciationInterface
+
 
 class RaspberryReceiver(Receiver):
 
-    def __init__(self, controller: NavigationController):
+    def __init__(self, controller: NavigationController, interface: CommunciationInterface):
+        self.interface = interface
         self.controller = controller
         self.messageHandlers = {
             "pong": self.controller.on_pong,
@@ -12,7 +15,7 @@ class RaspberryReceiver(Receiver):
             "point_scanning_finished": self.controller.on_point_scanning_finished,
             "turned_to_target_line": self.controller.on_turned_to_target_line,
             "cone_detected": self.controller.on_cone_detected,
-            "obstacle_detected": self.controller.on_obstacle_detected
+            "obstacle_detected": self.controller.on_obstacle_detected,
         }
 
     def __on_receive(self, message):
@@ -23,5 +26,6 @@ class RaspberryReceiver(Receiver):
             self.messageHandlers[message]()
 
     def receive(self):
-        # dummy implementation
-        pass
+        message = self.interface.read()
+        if message:
+            self.__on_receive(message)

@@ -1,7 +1,10 @@
 from Communication.Emitter import Emitter
+from CommunicationInterface import CommunicationInterface
 
 class RaspberryEmitter(Emitter):
 
+    def __init__(self, interface: CommunicationInterface):
+        self.interface = interface
+
     def emit(self, message):
-        # dummy implementation
-        print("emit:", message)
+        self.interface.write(message)

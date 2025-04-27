@@ -16,6 +16,7 @@ class RaspberryReceiver(Receiver):
             "turned_to_target_line": self.controller.on_turned_to_target_line,
             "cone_detected": self.controller.on_cone_detected,
             "obstacle_detected": self.controller.on_obstacle_detected,
+            "set_target": self.controller.on_set_target,
         }
 
     def __on_receive(self, message):

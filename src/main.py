@@ -21,9 +21,6 @@ def main():
     navigation_controller = NavigationController(emitter, object_detector)
     receiver: Receiver = RaspberryReceiver(navigation_controller)
 
-    target = sys.argv[1]
-    navigation_controller.start(target)
-
     while True:
         receiver.receive()
 

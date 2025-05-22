@@ -1,5 +1,5 @@
 import serial
-from CommunciationInterface import CommunicationInterface
+from CommunicationInterface import CommunicationInterface
 from Configuration.Configurator import Configurator
 
 class SerialInterface(CommunicationInterface):

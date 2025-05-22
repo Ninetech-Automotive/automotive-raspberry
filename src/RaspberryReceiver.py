@@ -1,11 +1,11 @@
 from Communication.Receiver import Receiver
 from Navigation.NavigationController import NavigationController
-from CommunciationInterface import CommunciationInterface
+from CommunicationInterface import CommunicationInterface
 
 
 class RaspberryReceiver(Receiver):
 
-    def __init__(self, controller: NavigationController, interface: CommunciationInterface):
+    def __init__(self, controller: NavigationController, interface: CommunicationInterface):
         self.interface = interface
         self.controller = controller
         self.messageHandlers = {

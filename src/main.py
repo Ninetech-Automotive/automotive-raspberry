@@ -11,7 +11,7 @@ from RaspberryEmitter import RaspberryEmitter
 from RaspberryReceiver import RaspberryReceiver
 from Configuration.Configurator import Configurator
 from SerialInterface import SerialInterface
-from CommunciationInterface import CommunicationInterface
+from CommunicationInterface import CommunicationInterface
 from pathlib import Path
 
 
@@ -27,5 +27,12 @@ def main():
     while True:
         receiver.receive()
 
+def start_streaming_server():
+    camera: Camera = RaspberryCamera()
+    camera.enable()
+    camera.start_streaming_server()
+
+
 if __name__ == "__main__":
     main()
+    #start_streaming_server()

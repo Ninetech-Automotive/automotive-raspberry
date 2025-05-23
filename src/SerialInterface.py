@@ -9,6 +9,8 @@ class SerialInterface(CommunicationInterface):
         self.serial = serial.Serial(device, baudrate=baud, timeout=1)
 
     def write(self, message):
+        if not message.endswith('\n'):
+            message += '\n'
         self.serial.write(message.encode())
 
     def read(self):

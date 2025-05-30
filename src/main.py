@@ -17,8 +17,9 @@ from pathlib import Path
 
 def main():
     Configurator.initialize(Path("src/config.json"))
-    camera: Camera = RaspberryCamera()
-    object_detector: ObjectDetector = YOLODetector(camera)
+    top_camera: Camera = RaspberryCamera(0)
+    bottom_camera: Camera = RaspberryCamera(1)
+    object_detector: ObjectDetector = YOLODetector(top_camera, bottom_camera)
     communication_interface: CommunicationInterface = SerialInterface()
     emitter: Emitter = RaspberryEmitter(communication_interface)
     navigation_controller = NavigationController(emitter, object_detector)
@@ -28,7 +29,7 @@ def main():
         receiver.receive()
 
 def start_streaming_server():
-    camera: Camera = RaspberryCamera()
+    camera: Camera = RaspberryCamera(1)
     camera.enable()
     camera.start_streaming_server()
 

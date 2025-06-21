@@ -9,7 +9,8 @@ from datetime import datetime
 class RaspberryCamera(Camera):
 
     def __init__(self, camera_index=0):   
-        self.camera = Picamera2(0)
+        self.camera_index = camera_index
+        self.camera = Picamera2(camera_index)
         self.camera.preview_configuration.main.format = "RGB888"
         self.camera.preview_configuration.main.size = (1920, 1080)
 

@@ -1,3 +1,5 @@
+#! /home/remote/automotive-raspberry/.venv/bin/python3
+
 import sys
 sys.path.insert(1, './src/Core/src')
 from Communication.Emitter import Emitter
@@ -36,4 +38,4 @@ def start_streaming_server():
 
 if __name__ == "__main__":
     main()
-    #start_streaming_server()
+    start_streaming_server()

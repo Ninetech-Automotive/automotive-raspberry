@@ -2,7 +2,6 @@ from Communication.Receiver import Receiver
 from Navigation.NavigationController import NavigationController
 from CommunicationInterface import CommunicationInterface
 
-
 class RaspberryReceiver(Receiver):
 
     def __init__(self, controller: NavigationController, interface: CommunicationInterface):
@@ -21,9 +20,14 @@ class RaspberryReceiver(Receiver):
         }
 
     def __on_receive(self, message):
+        print(f"[uc->pi]{message}")
         if ":" in message:
             message, value = message.split(":")
-            self.messageHandlers[message](float(value))
+            try:
+                num_value = float(value)
+                self.messageHandlers[message](num_value)
+            except ValueError:
+                self.messageHandlers[message](value)
         else:
             self.messageHandlers[message]()
 

@@ -14,4 +14,4 @@ class SerialInterface(CommunicationInterface):
         self.serial.write(message.encode())
 
     def read(self):
-        return self.serial.readline().decode('utf-8', errors='ignore').strip()
+        return self.serial.readline().decode('utf-8', errors='ignore').replace('\x00', '').strip()

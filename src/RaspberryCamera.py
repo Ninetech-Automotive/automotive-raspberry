@@ -5,6 +5,7 @@ import cv2
 import time
 from flask import Flask, render_template, Response
 from datetime import datetime
+from libcamera import Transform
 
 class RaspberryCamera(Camera):
 
@@ -13,7 +14,8 @@ class RaspberryCamera(Camera):
         self.camera = Picamera2(camera_index)
         self.camera.preview_configuration.main.format = "RGB888"
         self.camera.preview_configuration.main.size = (1920, 1080)
-
+        self.camera.preview_configuration.transform = Transform(hflip=1, vflip=1)
+    
     def enable(self):
         self.camera.start()
 
@@ -27,8 +29,12 @@ class RaspberryCamera(Camera):
         return self.camera.preview_configuration.main.size[1]
 
     def get_image_array(self):
-        return self.camera.capture_array()
-
+        self.enable()
+        image = self.camera.capture_array()
+        self.disable()
+        return image
+    
+        
     def capture_and_save_image(self):
         output_dir = "test_images"
         if not os.path.exists(output_dir):

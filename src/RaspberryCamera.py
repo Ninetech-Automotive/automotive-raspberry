@@ -13,7 +13,7 @@ class RaspberryCamera(Camera):
         self.camera_index = camera_index
         self.camera = Picamera2(camera_index)
         self.camera.preview_configuration.main.format = "RGB888"
-        self.camera.preview_configuration.main.size = (1920, 1080)
+        self.camera.preview_configuration.main.size = (4608,2592)
         self.camera.preview_configuration.transform = Transform(hflip=1, vflip=1)
     
     def enable(self):

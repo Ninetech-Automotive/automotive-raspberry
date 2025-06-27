@@ -199,8 +199,8 @@
                         "y": 1150
                     },
                     "bounding_box_corners": {
-                        "from": "LOWER_LEFT",
-                        "to": "UPPER_RIGHT"
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
                     }
                 }
             }

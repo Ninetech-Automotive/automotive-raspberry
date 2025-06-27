@@ -16,6 +16,7 @@ class RaspberryReceiver(Receiver):
             "cone_detected": self.controller.on_cone_detected,
             "obstacle_detected": self.controller.on_obstacle_detected,
             "set_target": self.controller.on_set_target,
+            "line_missing": self.controller.on_line_missing,
             "stop": self.controller.on_stop,
         }
 

@@ -7,5 +7,5 @@ class RaspberryEmitter(Emitter):
         self.interface = interface
 
     def emit(self, message):
-        print(f"[pi->uc]{message}")
+        print(f"[pi->uc] {message}")
         self.interface.write(message)

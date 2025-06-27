@@ -4,10 +4,10 @@
         "baud": 9600
     },
     "tolerances": {
-        "waypoint": 200,
+        "waypoint": 150,
         "obstacle": 150,
-        "edge_x": 200,
-        "edge_y": 200
+        "edge_x": 150,
+        "edge_y": 150
     },
     "waypoints": {
         "X": {

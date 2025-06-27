@@ -21,7 +21,7 @@ class RaspberryReceiver(Receiver):
         }
 
     def __on_receive(self, message):
-        print(f"[uc->pi]{message}")
+        print(f"[uc->pi] {message}")
         if ":" in message:
             message, value = message.split(":")
             try:

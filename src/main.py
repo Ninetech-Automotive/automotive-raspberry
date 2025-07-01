@@ -28,7 +28,11 @@ def main():
     emitter: Emitter = RaspberryEmitter(communication_interface)
     navigation_controller = NavigationController(emitter, object_detector)
     receiver: Receiver = RaspberryReceiver(navigation_controller, communication_interface)
+
+    navigation_controller.start()
+
     while True:
+        navigation_controller.check_communication()
         receiver.receive()
     
 

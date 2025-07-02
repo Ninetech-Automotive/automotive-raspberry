@@ -45,8 +45,8 @@
                 "F": {
                     "angle": 47.0,
                     "obstacle_coords": {
-                        "x": 3315,
-                        "y": 1534
+                        "x": 2936,
+                        "y": 1967
                     },
                     "bounding_box_corners": {
                         "from": "LOWER_LEFT",
@@ -67,8 +67,8 @@
                 "H": {
                     "angle": 313.0,
                     "obstacle_coords": {
-                        "x": 886,
-                        "y": 1502
+                        "x": 803,
+                        "y": 1390
                     },
                     "bounding_box_corners": {
                         "from": "LOWER_RIGHT",
@@ -117,8 +117,8 @@
                 "S": {
                     "angle": 135.0,
                     "obstacle_coords": {
-                        "x": 881,
-                        "y": 1513
+                        "x": 803,
+                        "y": 1390
                     },
                     "bounding_box_corners": {
                         "from": "UPPER_LEFT",
@@ -184,8 +184,8 @@
                 "S": {
                     "angle": 226.0,
                     "obstacle_coords": {
-                        "x": 3313,
-                        "y": 1543
+                        "x": 2936,
+                        "y": 1967
                     },
                     "bounding_box_corners": {
                         "from": "UPPER_RIGHT",

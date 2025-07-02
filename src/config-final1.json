@@ -1,0 +1,420 @@
+{
+    "communication": {
+        "device": "/dev/ttyAMA1",
+        "baud": 9600
+    },
+    "tolerances": {
+        "waypoint": 150,
+        "obstacle": 150,
+        "edge_x": 150,
+        "edge_y": 150
+    },
+    "waypoints": {
+        "X": {
+            "x": 0,
+            "y": 0,
+            "edges": {
+                "S": {
+                    "angle": 0.0,
+                    "obstacle_coords": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                }
+            }
+        },
+        "S": {
+            "x": 2077,
+            "y": 2581,
+            "edges": {
+                "G": {
+                    "angle": 12.0,
+                    "obstacle_coords": {
+                        "x": 2390,
+                        "y": 1381
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "F": {
+                    "angle": 47.0,
+                    "obstacle_coords": {
+                        "x": 3315,
+                        "y": 1534
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "X": {
+                    "angle": 180.0,
+                    "obstacle_coords": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                },
+                "H": {
+                    "angle": 313.0,
+                    "obstacle_coords": {
+                        "x": 886,
+                        "y": 1502
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                }
+            }
+        },
+        "H": {
+            "x": 579,
+            "y": 1039,
+            "edges": {
+                "C": {
+                    "angle": 5.0,
+                    "obstacle_coords": {
+                        "x": 1191,
+                        "y": 649
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "I": {
+                    "angle": 41.0,
+                    "obstacle_coords": {
+                        "x": 1561,
+                        "y": 750
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "G": {
+                    "angle": 81.0,
+                    "obstacle_coords": {
+                        "x": 1656,
+                        "y": 944
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "S": {
+                    "angle": 135.0,
+                    "obstacle_coords": {
+                        "x": 881,
+                        "y": 1513
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                }
+            }
+        },
+        "G": {
+            "x": 2524,
+            "y": 863,
+            "edges": {
+                "A": {
+                    "angle": 36.0,
+                    "obstacle_coords": {
+                        "x": 2848,
+                        "y": 647
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "F": {
+                    "angle": 105.0,
+                    "obstacle_coords": {
+                        "x": 3103,
+                        "y": 914
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                },
+                "S": {
+                    "angle": 191.0,
+                    "obstacle_coords": {
+                        "x": 2383,
+                        "y": 1389
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                },
+                "H": {
+                    "angle": 259.0,
+                    "obstacle_coords": {
+                        "x": 1655,
+                        "y": 953
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                },
+                "I": {
+                    "angle": 324.0,
+                    "obstacle_coords": {
+                        "x": 2201,
+                        "y": 705
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                }
+            }
+        },
+        "F": {
+            "x": 3797,
+            "y": 985,
+            "edges": {
+                "S": {
+                    "angle": 226.0,
+                    "obstacle_coords": {
+                        "x": 3313,
+                        "y": 1543
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                },
+                "G": {
+                    "angle": 284.0,
+                    "obstacle_coords": {
+                        "x": 3099,
+                        "y": 922
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                },
+                "A": {
+                    "angle": 358.0,
+                    "obstacle_coords": {
+                        "x": 3389,
+                        "y": 699
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                }
+            }
+        },
+        "I": {
+            "x": 1966,
+            "y": 602,
+            "edges": {
+                "B": {
+                    "angle": 8.0,
+                    "obstacle_coords": {
+                        "x": 2115,
+                        "y": 422
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "A": {
+                    "angle": 73.0,
+                    "obstacle_coords": {
+                        "x": 2495,
+                        "y": 547
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "G": {
+                    "angle": 142.0,
+                    "obstacle_coords": {
+                        "x": 2198,
+                        "y": 718
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                },
+                "H": {
+                    "angle": 222.0,
+                    "obstacle_coords": {
+                        "x": 1561,
+                        "y": 750
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                },
+                "C": {
+                    "angle": 315.0,
+                    "obstacle_coords": {
+                        "x": 1711,
+                        "y": 513
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                }
+            }
+        },
+        "A": {
+            "x": 3093,
+            "y": 485,
+            "edges": {
+                "F": {
+                    "angle": 178.0,
+                    "obstacle_coords": {
+                        "x": 3394,
+                        "y": 704
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                },
+                "G": {
+                    "angle": 216.0,
+                    "obstacle_coords": {
+                        "x": 2843,
+                        "y": 653
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                },
+                "I": {
+                    "angle": 252.0,
+                    "obstacle_coords": {
+                        "x": 2495,
+                        "y": 547
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                },
+                "B": {
+                    "angle": 320.0,
+                    "obstacle_coords": {
+                        "x": 2573,
+                        "y": 376
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_RIGHT",
+                        "to": "UPPER_LEFT"
+                    }
+                }
+            }
+        },
+        "C": {
+            "x": 1508,
+            "y": 444,
+            "edges": {
+                "B": {
+                    "angle": 42.0,
+                    "obstacle_coords": {
+                        "x": 1903,
+                        "y": 366
+                    },
+                    "bounding_box_corners": {
+                        "from": "LOWER_LEFT",
+                        "to": "UPPER_RIGHT"
+                    }
+                },
+                "I": {
+                    "angle": 133.0,
+                    "obstacle_coords": {
+                        "x": 1714,
+                        "y": 518
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                },
+                "H": {
+                    "angle": 182.0,
+                    "obstacle_coords": {
+                        "x": 1191,
+                        "y": 655
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                }
+            }
+        },
+        "B": {
+            "x": 2206,
+            "y": 304,
+            "edges": {
+                "A": {
+                    "angle": 137.0,
+                    "obstacle_coords": {
+                        "x": 2571,
+                        "y": 382
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_LEFT",
+                        "to": "LOWER_RIGHT"
+                    }
+                },
+                "I": {
+                    "angle": 185.0,
+                    "obstacle_coords": {
+                        "x": 2112,
+                        "y": 427
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                },
+                "C": {
+                    "angle": 222.0,
+                    "obstacle_coords": {
+                        "x": 1906,
+                        "y": 368
+                    },
+                    "bounding_box_corners": {
+                        "from": "UPPER_RIGHT",
+                        "to": "LOWER_LEFT"
+                    }
+                }
+            }
+        }
+    }
+}

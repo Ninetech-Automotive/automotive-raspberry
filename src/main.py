@@ -18,7 +18,7 @@ from pathlib import Path
 
 def main():
     print("[pi    ] starting program")
-    Configurator.initialize(Path("src/config-test.json"))
+    Configurator.initialize(Path("src/config-final1.json"))
     top_camera: Camera = RaspberryCamera(0)
     # top_camera.enable()
     # top_camera.start_streaming_server()
